@@ -5,48 +5,126 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/4f8119bdc9.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 
 <body>
-    <!-- inicio del navbar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Dropdown link
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                </ul>
+    <div>
+        <!-- inicio del navbar -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <i class="fab fa-instagram"></i>
+                <a class="navbar-brand" href="#"><strong>Instagram</strong> </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown link
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
-    <!-- fin del navbar -->
+        </nav>
+        <!-- fin del navbar -->
 
-    
+        <!-- Moverse entre paginas, Inicio -->
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                    type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                    type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</button>
+            </li>            
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+                tabindex="0">Tres imagenes por fila
+                <div class="container mt-4">
+    <div class="row g-3">
+
+        <!-- Imagen 1 -->
+        <div class="col-md-4 col-sm-6">
+            <img src="https://picsum.photos/500" class="img-fluid rounded" alt="Imagen 1">
+        </div>
+
+        <!-- Imagen 2 -->
+        <div class="col-md-4 col-sm-6">
+            <img src="https://picsum.photos/seed/picsum/500" class="img-fluid rounded" alt="Imagen 2">
+        </div>
+
+        <!-- Imagen 3 -->
+        <div class="col-md-4 col-sm-6">
+            <img src="https://picsum.photos/500" class="img-fluid rounded" alt="Imagen 3">
+        </div>
+
+        <!-- Imagen 4 -->
+        <div class="col-md-4 col-sm-6">
+            <img src="img4.jpg" class="img-fluid rounded" alt="Imagen 4">
+        </div>
+
+        <!-- Imagen 5 -->
+        <div class="col-md-4 col-sm-6">
+            <img src="img5.jpg" class="img-fluid rounded" alt="Imagen 5">
+        </div>
+
+        <!-- Imagen 6 -->
+        <div class="col-md-4 col-sm-6">
+            <img src="img6.jpg" class="img-fluid rounded" alt="Imagen 6">
+        </div>
+
+        <!-- Imagen 7 -->
+        <div class="col-md-4 col-sm-6">
+            <img src="img7.jpg" class="img-fluid rounded" alt="Imagen 7">
+        </div>
+
+        <!-- Imagen 8 -->
+        <div class="col-md-4 col-sm-6">
+            <img src="img8.jpg" class="img-fluid rounded" alt="Imagen 8">
+        </div>
+
+        <!-- Imagen 9 -->
+        <div class="col-md-4 col-sm-6">
+            <img src="img9.jpg" class="img-fluid rounded" alt="Imagen 9">
+        </div>
+
+    </div>
+</div>
+            
+            </div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+                tabindex="0">Una imagen por fila</div>
+        </div>
+
+
+        <!-- Moverse entre paginas, Fin -->
+    </div>
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
