@@ -24,25 +24,51 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
+
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">
+                                Launch static backdrop modal
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            ...
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Understood</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
-                        </li>
+
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Dropdown link
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
+                            <button type="button" class="btn btn-secondary">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <i class="fas fa-cog" style="color: #fafcff;"></i>
+                                </a>
+
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </button>
                         </li>
                     </ul>
                 </div>
@@ -51,124 +77,127 @@
         <!-- fin del navbar -->
 
         <!-- Moverse entre paginas, Inicio -->
-        <!-- Iconos -->        
+        <!-- Iconos -->
         <ul class="nav nav-pills justify-content-center mb-3 " id="pills-tab" role="tablist">
             <li class="nav-item" role="presentation">
                 <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
-                    type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i class="fas fa-th"></i></button>
+                    type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i
+                        class="fas fa-th"></i></button>
             </li>
             <li class="nav-item" role="presentation">
                 <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
-                    type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i class="fas fa-square"></i></button>
-            </li>              
+                    type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i
+                        class="fas fa-square"></i></button>
+            </li>
         </ul>
-            
+
         <!-- Imagenes en grid -->
-            <div class="tab-content" id="pills-tabContent">
-                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
-                    tabindex="0">
-                
-                    <div class="container-fluid mt-4">
-                            <div class="row g-1">
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+                tabindex="0">
 
-                            <!-- Imagen 1 -->
-                            <div class="col-md-4 col-sm-6">
-                                <img src="https://picsum.photos/500/400" class="img-fluid rounded" alt="Imagen 1">
-                            </div>
+                <div class="container-fluid mt-4">
+                    <div class="row g-1">
 
-                            <!-- Imagen 2 -->
-                            <div class="col-md-4 col-sm-6">
-                                <img src="https://picsum.photos/seed/picsum/500/400" class="img-fluid rounded" alt="Imagen 2">
-                            </div>
-
-                            <!-- Imagen 3 -->
-                            <div class="col-md-4 col-sm-6">
-                                <img src="https://picsum.photos/id/18/500/400" class="img-fluid rounded" alt="Imagen 3">
-                            </div>
-
-                            <!-- Imagen 4 -->
-                            <div class="col-md-4 col-sm-6">
-                                <img src="https://picsum.photos/500/400/?blur" class="img-fluid rounded" alt="Imagen 4">
-                            </div>
-
-                            <!-- Imagen 5 -->
-                            <div class="col-md-4 col-sm-6">
-                                <img src="https://picsum.photos/id/19/500/400" class="img-fluid rounded" alt="Imagen 5">
-                            </div>
-
-                            <!-- Imagen 6 -->
-                            <div class="col-md-4 col-sm-6">
-                                <img src="https://picsum.photos/id/22/500/400" class="img-fluid rounded" alt="Imagen 6">
-                            </div>
-
-                            <!-- Imagen 7 -->
-                            <div class="col-md-4 col-sm-6">
-                                <img src="https://picsum.photos/id/25/500/400" class="img-fluid rounded" alt="Imagen 7">
-                            </div>
-
-                            <!-- Imagen 8 -->
-                            <div class="col-md-4 col-sm-6">
-                                <img src="https://picsum.photos/id/13/500/400" class="img-fluid rounded" alt="Imagen 8">
-                            </div>
-
-                            <!-- Imagen 9 -->
-                            <div class="col-md-4 col-sm-6">
-                                <img src="https://picsum.photos/id/15/500/400" class="img-fluid rounded" alt="Imagen 9">
-                            </div>
-
+                        <!-- Imagen 1 -->
+                        <div class="col-md-4 col-sm-6">
+                            <img src="https://picsum.photos/500/400" class="img-fluid rounded" alt="Imagen 1">
                         </div>
-                    </div>
-                
-                </div>
 
-            <!-- Una imagen por fila -->
-                <div class="tab-pane fade" id="pills-profile" role="tabpanel"
-                    aria-labelledby="pills-profile-tab" tabindex="0">
-
-                    <div class="container mt-4">
-                        <div class="row justify-content-center">
-                            <div class="col-12 col-md-6 col-lg-4">
-
-                                <!-- CARD 1 -->
-                                <div class="card mb-4">
-                                    <div class="card-title">
-                                        <h5 class="card-title">title</h5>                                        
-                                    </div>
-                                    <img src="https://picsum.photos/id/15/2500/1667" class="card-img-top" alt="">
-                                    <div class="card-body">                                       
-                                        <p class="card-text">This is an example of a very good photo.</p>
-                                    </div>
-                                </div>
-
-                                <!-- CARD 2 -->
-                                <div class="card mb-4">
-                                    <div class="card-title">
-                                        <h5 class="card-title">title</h5>                                        
-                                    </div>
-                                    <img src="https://picsum.photos/id/10/2500/1667" class="card-img-top" alt="">
-                                    <div class="card-body">                                        
-                                        <p class="card-text">Amazing landscape and colors.</p>
-                                    </div>
-                                </div>
-
-                                <!-- CARD 3 -->
-                                <div class="card mb-4">
-                                    <div class="card-title">
-                                        <h5 class="card-title">title</h5>                                        
-                                    </div>
-                                    <img src="https://picsum.photos/id/20/2500/1667" class="card-img-top" alt="">
-                                    <div class="card-body">                                        
-                                        <p class="card-text">Football moment of the year.</p>
-                                    </div>
-                                </div>
-
-                            </div>
+                        <!-- Imagen 2 -->
+                        <div class="col-md-4 col-sm-6">
+                            <img src="https://picsum.photos/seed/picsum/500/400" class="img-fluid rounded"
+                                alt="Imagen 2">
                         </div>
-                    </div>
 
+                        <!-- Imagen 3 -->
+                        <div class="col-md-4 col-sm-6">
+                            <img src="https://picsum.photos/id/18/500/400" class="img-fluid rounded" alt="Imagen 3">
+                        </div>
+
+                        <!-- Imagen 4 -->
+                        <div class="col-md-4 col-sm-6">
+                            <img src="https://picsum.photos/500/400/?blur" class="img-fluid rounded" alt="Imagen 4">
+                        </div>
+
+                        <!-- Imagen 5 -->
+                        <div class="col-md-4 col-sm-6">
+                            <img src="https://picsum.photos/id/19/500/400" class="img-fluid rounded" alt="Imagen 5">
+                        </div>
+
+                        <!-- Imagen 6 -->
+                        <div class="col-md-4 col-sm-6">
+                            <img src="https://picsum.photos/id/22/500/400" class="img-fluid rounded" alt="Imagen 6">
+                        </div>
+
+                        <!-- Imagen 7 -->
+                        <div class="col-md-4 col-sm-6">
+                            <img src="https://picsum.photos/id/25/500/400" class="img-fluid rounded" alt="Imagen 7">
+                        </div>
+
+                        <!-- Imagen 8 -->
+                        <div class="col-md-4 col-sm-6">
+                            <img src="https://picsum.photos/id/13/500/400" class="img-fluid rounded" alt="Imagen 8">
+                        </div>
+
+                        <!-- Imagen 9 -->
+                        <div class="col-md-4 col-sm-6">
+                            <img src="https://picsum.photos/id/15/500/400" class="img-fluid rounded" alt="Imagen 9">
+                        </div>
+
+                    </div>
                 </div>
 
             </div>
+
+            <!-- Una imagen por fila -->
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+                tabindex="0">
+
+                <div class="container mt-4">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-6 col-lg-4">
+
+                            <!-- CARD 1 -->
+                            <div class="card mb-4">
+                                <div class="card-title">
+                                    <h5 class="card-title">title</h5>
+                                </div>
+                                <img src="https://picsum.photos/id/15/2500/1667" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <p class="card-text">This is an example of a very good photo.</p>
+                                </div>
+                            </div>
+
+                            <!-- CARD 2 -->
+                            <div class="card mb-4">
+                                <div class="card-title">
+                                    <h5 class="card-title">title</h5>
+                                </div>
+                                <img src="https://picsum.photos/id/10/2500/1667" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <p class="card-text">Amazing landscape and colors.</p>
+                                </div>
+                            </div>
+
+                            <!-- CARD 3 -->
+                            <div class="card mb-4">
+                                <div class="card-title">
+                                    <h5 class="card-title">title</h5>
+                                </div>
+                                <img src="https://picsum.photos/id/20/2500/1667" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <p class="card-text">Football moment of the year.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
         <!-- Moverse entre paginas, Fin -->
 
     </div>
