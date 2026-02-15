@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Instagram Bootstrap</title>
     <script src="https://kit.fontawesome.com/4f8119bdc9.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -13,70 +13,82 @@
 <body>
     <div>
         <!-- inicio del navbar -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg bg-light border-bottom">
             <div class="container-fluid">
-                <i class="fab fa-instagram"></i>
-                <a class="navbar-brand" href="#"><strong>Instagram</strong> </a>
+                <a class="navbar-brand d-flex align-items-center gap-2 fs-3 fw-bold" href="#">
+                    <i class="fab fa-instagram fs-2"></i>
+                    Instagram
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                    <div class="d-flex align-items-center gap-3">
 
-                        <li class="nav-item">
-                            <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#staticBackdrop">
-                                Create a new post
-                            </button>
+                        <!-- Botón verde -->
+                        <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop">
+                            Create a new post
+                        </button>
 
-                            <!-- Modal -->
-                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
-                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
-                                aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Create a new post</h1>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Create a new post</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <label class="form-label fw-bold">Caption:</label>
+                                        <textarea class="form-control mb-3" rows="3"
+                                            placeholder="Add the caption of your post here"></textarea>
+                                        <div class="d-flex gap-2">
+                                            <button class="btn btn-light border">
+                                                <i class="fas fa-camera"></i>
+                                            </button>
+
+                                            <button class="btn btn-light border">
+                                                <i class="fas fa-map-marker-alt"></i>
+                                            </button>
                                         </div>
-                                        <div class="modal-body">
-                                            ...
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary"
-                                                data-bs-dismiss="modal">Close</button>
-                                            <button type="button" class="btn btn-success">Publish</button>
-                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-success">Publish</button>
                                     </div>
                                 </div>
                             </div>
-                        </li>
+                        </div>
 
-                        <li class="nav-item dropdown">
-                            
-                                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">                                    
-                                    <i class="fas fa-cog" style="color: #fafcff;"></i>
-                                </button>                            
-                            
 
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Profile</a></li>
-                                    <li><a class="dropdown-item" href="#">Accesibility</a></li>
-                                    <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
-                                    <li><hr class="dropdown-divider"></li>
-                                    <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
-                                    
-                                </ul>
-                            
-                        </li>
-                    </ul>
+                        <div class="nav-item dropdown">
+
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="fas fa-cog" style="color: #fafcff;"></i>
+                            </button>
+
+
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="#">Profile</a></li>
+                                <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                                <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+
+                            </ul>
+
+                        </div>                        
+                    </div>
                 </div>
-            </div>
         </nav>
         <!-- fin del navbar -->
 
@@ -85,13 +97,15 @@
         <ul class="nav nav-pills justify-content-center mb-3 " id="pills-tab" role="tablist">
             <li class="nav-item" role="presentation">
                 <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
-                    type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i
-                        class="fas fa-th"></i></button>
+                    type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                    <i class="fas fa-th"></i>
+                </button>
             </li>
             <li class="nav-item" role="presentation">
                 <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
-                    type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i
-                        class="fas fa-square"></i></button>
+                    type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+                    <i class="fas fa-square"></i>
+                </button>
             </li>
         </ul>
 
@@ -163,35 +177,42 @@
                         <div class="col-12 col-md-6 col-lg-4">
 
                             <!-- CARD 1 -->
-                            <div class="card mb-4">
-                                <div class="card-title">
-                                    <h5 class="card-title">title</h5>
+                            <div class="card mb-4" style="max-width: 400px;">
+                                <div class="d-flex justify-content-between align-items-center px-3 py-2 bg-white">
+                                    <h5 class="card-title mb-0 fw-semibold">Naturaleza</h5>
+                                    <span class="text-secondary">8/16</span>
                                 </div>
                                 <img src="https://picsum.photos/id/15/2500/1667" class="card-img-top" alt="">
-                                <div class="card-body">
-                                    <p class="card-text">This is an example of a very good photo.</p>
+                                <div class="card-body py-2">
+                                    <p class="card-text fw-bold mb-2">204 Likes</p>
+                                    <p class="card-text text-secondary">Lorem ipsum dolor sit amet consectetur,
+                                        adipisicing elit. Nam perferendis tenetur et tempore dolorem.</p>
                                 </div>
                             </div>
 
                             <!-- CARD 2 -->
-                            <div class="card mb-4">
-                                <div class="card-title">
-                                    <h5 class="card-title">title</h5>
+                            <div class="card mb-4" style="max-width: 400px;">
+                                <div class="d-flex justify-content-between align-items-center px-3 py-2 bg-white">
+                                    <h5 class="card-title mb-0 fw-semibold">Lago y bosque</h5>
+                                    <span class="text-secondary">8/16</span>
                                 </div>
-                                <img src="https://picsum.photos/id/10/2500/1667" class="card-img-top" alt="">
-                                <div class="card-body">
-                                    <p class="card-text">Amazing landscape and colors.</p>
+                                <img src="https://picsum.photos/id/10/2500/1667 " class="card-img-top" alt="">
+                                <div class="card-body py-2">
+                                    <p class="card-text fw-bold mb-2">256 Likes</p>
+                                    <p class="card-text text-secondary">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum architecto cum laudantium dolore sequi blanditiis numquam.</p>
                                 </div>
                             </div>
 
                             <!-- CARD 3 -->
-                            <div class="card mb-4">
-                                <div class="card-title">
-                                    <h5 class="card-title">title</h5>
+                            <div class="card mb-4" style="max-width: 400px;">
+                                <div class="d-flex justify-content-between align-items-center px-3 py-2 bg-white">
+                                    <h5 class="card-title mb-0 fw-semibold">Oficina</h5>
+                                    <span class="text-secondary">8/16</span>
                                 </div>
-                                <img src="https://picsum.photos/id/20/2500/1667" class="card-img-top" alt="">
-                                <div class="card-body">
-                                    <p class="card-text">Football moment of the year.</p>
+                                <img src="https://picsum.photos/id/20/2500/1667 " class="card-img-top" alt="">
+                                <div class="card-body py-2">
+                                    <p class="card-text fw-bold mb-2">89 Likes</p>
+                                    <p class="card-text text-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque quisquam reiciendis perspiciatis numquam aperiam, libero rem.</p>
                                 </div>
                             </div>
 
